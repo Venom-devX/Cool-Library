@@ -11,7 +11,7 @@ Blue Title - String;
 Image - RbxAssetId
 ]]--
 ```
-## Making Tab
+## Making a Tab
 ```lua
 local Tabs = {
     MainTab = Window:Tab("Main Tab");
@@ -36,5 +36,11 @@ end) -- Format: Title, Callback
 ```lua
 local Toggle = Section:Toggle("Press this toggle!", function(Value)
     print(Value)
+end) -- Format: Title, Callback
+```
+## Creating a Input Box
+```lua
+Section:Box("Put something here.", function(Value)
+    print(Value) -- Print that has been writen in the box
 end) -- Format: Title, Callback
 ```
