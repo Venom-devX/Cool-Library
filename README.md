@@ -44,3 +44,13 @@ Section:Box("Put something here.", function(Value)
     print(Value) -- Print that has been writen in the box
 end) -- Format: Title, Callback
 ```
+## Creating Text Label
+```lua
+Section:Label("Its a text label") -- Text
+```
+## Creating a Picker
+```lua
+Section:Picker("Example Picker", {"Teste", "......"}, function(Value)
+    print(Value)
+end) -- Format: Title, Options, Callback
+```
